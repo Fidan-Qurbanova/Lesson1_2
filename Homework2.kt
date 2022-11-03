@@ -10,6 +10,9 @@ fun main() {
 
     val result4 = findFaranhiet(35)
     println("FaranHiet $result4")
+
+    var result5 =findPerimeter(3.0,4.0)
+    println("Perimeter $result5")
 }
 
 fun sumOfAngles(angleNum:Int): Int {
@@ -39,6 +42,11 @@ fun findPrice(limit :Int) :Int{
 
 fun findFaranhiet(celcius : Int ): Double{
 return (celcius * 1.8) +32
+}
+
+
+fun findPerimeter(a:Double,b:Double):Double{
+    return 2 * (a + b)
 }
 
 
