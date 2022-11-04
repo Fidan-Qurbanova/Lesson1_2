@@ -13,6 +13,13 @@ fun main() {
 
     var result5 =findPerimeter(3.0,4.0)
     println("Perimeter $result5")
+
+    var result6 = findFactorial(5)
+    println("Factorial value $result6")
+
+
+    var result7 = findLetter("Hello World")
+    println("Count of letter a in word $result7")
 }
 
 fun sumOfAngles(angleNum:Int): Int {
@@ -47,6 +54,24 @@ return (celcius * 1.8) +32
 
 fun findPerimeter(a:Double,b:Double):Double{
     return 2 * (a + b)
+}
+
+fun findFactorial(a:Int):Int{
+ var factorialvalue=1
+    for( i in 1..a){
+        factorialvalue*=i
+
+    }
+    return factorialvalue
+}
+
+fun findLetter(word: String) :Int{
+    var numberOfLetter=0
+    for(c in word)
+    {
+        if(c=='a') numberOfLetter++
+    }
+    return numberOfLetter;
 }
 
 
